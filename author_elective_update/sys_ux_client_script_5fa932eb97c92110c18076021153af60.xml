@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Record default - 3.0.0 preview.">0fa9feab97c92110c18076021153af70</macroponent>
+        <name>ribbon/NODE__isHidden</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[function evaluateProperty({api}) {
+	const ribbonLoc = api.context.app.ribbonLocation;
+	return !api.state.isValidRecord || api.state.isNewRecord || ribbonLoc === 'sidebar';
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-22 15:38:08</sys_created_on>
+        <sys_id>5fa932eb97c92110c18076021153af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ribbon/NODE__isHidden</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_client_script_5fa932eb97c92110c18076021153af60</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-22 15:38:08</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>0bbed92bdb121d948aea21c405961966</instance_id>
+        <instance_name>dev140127</instance_name>
+        <name>sys_ux_client_script_5fa932eb97c92110c18076021153af60</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Record default - 3.0.0 preview."&gt;0fa9feab97c92110c18076021153af70&lt;/macroponent&gt;&lt;name&gt;ribbon/NODE__isHidden&lt;/name&gt;&lt;preset/&gt;&lt;required_translations/&gt;&lt;script&gt;&lt;![CDATA[function evaluateProperty({api}) {
+	const ribbonLoc = api.context.app.ribbonLocation;
+	return !api.state.isValidRecord || api.state.isNewRecord || ribbonLoc === 'sidebar';
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-02-22 15:38:08&lt;/sys_created_on&gt;&lt;sys_id&gt;5fa932eb97c92110c18076021153af60&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;ribbon/NODE__isHidden&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_5fa932eb97c92110c18076021153af60&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-22 15:38:08&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-816832620</payload_hash>
+        <record_name>ribbon/NODE__isHidden</record_name>
+        <reverted_from/>
+        <source>c383ba2797c92110c18076021153af0c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-22 15:39:26</sys_created_on>
+        <sys_id>9af9f62f97c92110c18076021153af86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18679c78bf50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-22 15:39:26</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>52f9f62f8cc92110cd162ffe8b5bbe86</update_guid>
+        <update_guid_history>52f9f62f8cc92110cd162ffe8b5bbe86:-816832620,f3a932eb7bc9211031245983fe53b2fa:1659376981,73a932ebe9c92110ad0c71265edd31e1:-816832620,e3a932eb31c921100ee5ddebebc4d17b:1659376981,1fa932eb05c9211093c25e3817e0bd67:940415140</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-22 15:39:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>047c2f57b18d48f0802afd7b54e3d084</sys_id>
+        <sys_metadata>5fa932eb97c92110c18076021153af60</sys_metadata>
+        <sys_name>ribbon/NODE__isHidden</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_5fa932eb97c92110c18076021153af60</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_5fa932eb97c92110c18076021153af60">9af9f62f97c92110c18076021153af86</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

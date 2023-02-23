@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "container_1",
+  "elementLabel" : "Container 1",
+  "propertyValues" : {
+    "ariaRegionHeadingLevel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1"
+    },
+    "ariaRegionName" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "includeAriaHeading" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "type" : {
+      "type" : "JSON_LITERAL",
+      "value" : "section"
+    },
+    "ariaRole" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "heading_1",
+      "elementLabel" : "Heading 1",
+      "propertyValues" : {
+        "hasNoMargin" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "level" : {
+          "type" : "JSON_LITERAL",
+          "value" : "1"
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "title-primary"
+        },
+        "wontWrap" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "label" : {
+          "type" : "CLIENT_TRANSFORM_SCRIPT",
+          "script" : {
+            "apiVersion" : "2.0.0",
+            "controllerElementId" : null,
+            "inlineScript" : null,
+            "scriptSysId" : "00d9faeb97c92110c18076021153af05",
+            "target" : null
+          }
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "default-slot",
+      "definition" : {
+        "id" : "1f6e0643eca7a637e36bd7833549ec9e",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : {
+        "padding-top" : "8px",
+        "padding-bottom" : "24px",
+        "text-overflow" : "ellipsis",
+        "width" : "512px"
+      }
+    }, {
+      "elementId" : "alert_1",
+      "elementLabel" : "Alert 1",
+      "propertyValues" : {
+        "expanded" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "textLinkProps" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "maxHeight" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "icon" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "header" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "",
+            "comment" : ""
+          }
+        },
+        "action" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "type" : {
+              "type" : "JSON_LITERAL",
+              "value" : "dismiss"
+            }
+          }
+        },
+        "content" : {
+          "type" : "STATE_BINDING",
+          "binding" : {
+            "address" : [ "errorMessage" ]
+          }
+        },
+        "status" : {
+          "type" : "JSON_LITERAL",
+          "value" : "critical"
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "ckudduhxucaaaabbaaddehhtiahhaasddtb",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+            "payload" : {
+              "type" : "JSON_LITERAL",
+              "value" : {
+                "propName" : "errorMessage",
+                "value" : null
+              }
+            },
+            "sysId" : "32408b42ff7a10109046e490703bf176"
+          },
+          "operation" : null,
+          "targetId" : "ckudduhxudaaaabbbbddehhtdbbgghhffgghd",
+          "type" : "EVENT"
+        } ]
+      } ],
+      "slot" : "default-slot",
+      "definition" : {
+        "id" : "553e398f150099fe18ece6938b5bea46",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "CLIENT_TRANSFORM_SCRIPT",
+        "script" : {
+          "apiVersion" : "1.0.0",
+          "controllerElementId" : null,
+          "inlineScript" : null,
+          "scriptSysId" : "0cd9faeb97c92110c18076021153af08",
+          "target" : null
+        }
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : {
+        "margin" : "var(--proxy-global-space--lg)"
+      }
+    }, {
+      "elementId" : "quantity_input",
+      "elementLabel" : "Quantity input",
+      "propertyValues" : {
+        "minlength" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "max" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "maxlength" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "multiple" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "pattern" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "helperContent" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "optional" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "label" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "Quantity to Split:",
+            "comment" : ""
+          }
+        },
+        "type" : {
+          "type" : "JSON_LITERAL",
+          "value" : "number"
+        },
+        "autofocus" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "required" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "min" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "readonly" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "name" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "invalid" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "messages" : {
+          "type" : "LIST_CONTAINER",
+          "container" : [ ]
+        },
+        "disabled" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "placeholder" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "value" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "hideRequiredIndicator" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "ckudduawddxaaaaccoddehhtffeeeebcceiii",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_input.NOW_INPUT#VALUE_SET",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_input.NOW_INPUT#VALUE_SET",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "749e13e8c0223010fa9b00c250f5706d"
+          },
+          "conditional" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "ckudduawddyaaaaccpddehhtfcgccdjccj",
+          "type" : "CLIENT_SCRIPT"
+        } ]
+      } ],
+      "slot" : "default-slot",
+      "definition" : {
+        "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : {
+        "margin" : "var(--proxy-global-space--lg)"
+      }
+    }, {
+      "elementId" : "container_2",
+      "elementLabel" : "Container 2",
+      "propertyValues" : {
+        "ariaRegionHeadingLevel" : {
+          "type" : "JSON_LITERAL",
+          "value" : "1"
+        },
+        "ariaRegionName" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "includeAriaHeading" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "type" : {
+          "type" : "JSON_LITERAL",
+          "value" : "section"
+        },
+        "ariaRole" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "default-slot",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "ok_button",
+          "elementLabel" : "Ok Button",
+          "propertyValues" : {
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "md"
+            },
+            "variant" : {
+              "type" : "JSON_LITERAL",
+              "value" : "primary"
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "disabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "OK",
+                "comment" : ""
+              }
+            },
+            "tooltipContent" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "OK",
+                "comment" : ""
+              }
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "cktccrsjmtaaaajjxddgiibbjjsgglpeewt",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : {
+                "dataBrokerId" : "bea36f6ebc423010fa9b0ad59e917a6d",
+                "operationName" : "EXECUTE",
+                "parentResourceId" : "create_split_asset_transform_2",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                }
+              },
+              "targetId" : "cktcvjzeccaaaaaayddgiibbpggbcsfjq",
+              "type" : "DATABROKER_OP"
+            }, {
+              "broker" : null,
+              "clientScript" : {
+                "sysId" : "60876f60c0623010fa9b00c250f570af"
+              },
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : null,
+              "targetId" : "cktcwdaaeegaaaabbkddgiibbccfbbjeedcx",
+              "type" : "CLIENT_SCRIPT"
+            }, {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : null,
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "sysId" : null
+              },
+              "operation" : null,
+              "targetId" : "cktcxaaveelaaaahhjjddgiibbaaarxthzd",
+              "type" : "EVENT"
+            }, {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : null,
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "sysId" : null
+              },
+              "operation" : null,
+              "targetId" : "cktcxbbjjbbwaaaahhaddgiibblccycclddccg",
+              "type" : "EVENT"
+            }, {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : null,
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "sysId" : null
+              },
+              "operation" : null,
+              "targetId" : "cktcxbbdwraaaahhbddgiibbthhciiasyi",
+              "type" : "EVENT"
+            }, {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : null,
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "sysId" : null
+              },
+              "operation" : null,
+              "targetId" : "cktcxjjottaaaaiigddgiibbucffceykff",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : "default-slot",
+          "definition" : {
+            "id" : "d37ce8abca89d02905fed903c8e34d8e",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : { }
+        }, {
+          "elementId" : "cancel_button",
+          "elementLabel" : "Cancel Button",
+          "propertyValues" : {
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "md"
+            },
+            "variant" : {
+              "type" : "JSON_LITERAL",
+              "value" : "secondary"
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "disabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Cancel",
+                "comment" : ""
+              }
+            },
+            "tooltipContent" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Cancel",
+                "comment" : ""
+              }
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "cktcvaanikaaaaiikddgiibbkddjjddhhdsn",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "sn_itam_workspace.RECORD#CLOSE_MODAL_RELAY_ed39511504423010fa9bc7d0aeab35a7",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "sysId" : "feb2936ebc023010fa9b0ad59e917af5"
+              },
+              "operation" : null,
+              "targetId" : "cktcvaanikaaaaiilddgiibbzfmyffffe",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : "default-slot",
+          "definition" : {
+            "id" : "d37ce8abca89d02905fed903c8e34d8e",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : {
+            "padding-right" : "10px"
+          }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "isInline" : null,
+            "items" : [{"slotName":"default-slot","styles":{"flex-direction":"row-reverse","display":"flex"}}],
+            "root" : null,
+            "rules" : {"flex-direction":"column"},
+            "styles" : null,
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "flex"
+          },
+          "version" : "2.0.0"
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : {
+        "width" : "100%",
+        "padding-top" : "40px",
+        "bottom" : "24px",
+        "right" : "24px"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "isInline" : null,
+        "items" : [{"slotName":"default-slot","styles":{"flex-direction":"column","display":"flex"}}],
+        "root" : null,
+        "rules" : {"flex-direction":"column"},
+        "styles" : null,
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      },
+      "version" : "2.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : {
+    "width" : "100%"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "54e9c8d25310101024e5ddeeff7b12db",
+    "type" : "GRAPHQL"
+  },
+  "dependencies" : { },
+  "elementId" : "gliderecord_query_1",
+  "elementLabel" : "GlideRecord Query 1",
+  "eventMappings" : [ {
+    "eventMappingId" : "cktcujscfaaaaeelddgiibbcbblggmdbaa",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "4cbb9328c0223010fa9b00c250f570fa"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "cktcujscfaaaaeemddgiibblrjgeeddfd",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : {
+    "table" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "table" ],
+        "category" : "props"
+      }
+    },
+    "recordId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "sysId" ],
+        "category" : "props"
+      }
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : "display_name,quantity"
+    },
+    "returnTableMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "bea36f6ebc423010fa9b0ad59e917a6d",
+    "type" : "TRANSFORM"
+  },
+  "dependencies" : { },
+  "elementId" : "create_split_asset_transform_1",
+  "elementLabel" : "Create Split Asset Transform 1",
+  "eventMappings" : [ {
+    "eventMappingId" : "cktcwehhrzaaaaccggddgiibbccjjsfjeemz",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "e4536facc0223010fa9b00c250f57065"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "cktcwehhrzaaaacchhddgiibbcjjcarses",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : {
+    "sysId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "sysId" ],
+        "category" : "props"
+      }
+    },
+    "quantity" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "quantity" ]
+      }
+    }
+  },
+  "readEvaluationMode" : "EXPLICIT"
+} ]</data>
+        <description/>
+        <dispatched_events>e19db124ed123010fa9b0089856e480a,feb2936ebc023010fa9b0ad59e917af5</dispatched_events>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "isInline" : null,
+    "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column","padding-top":"24px","padding-right":"24px","padding-bottom":"24px","padding-left":"24px"}}],
+    "root" : null,
+    "rules" : {"flex-flow":"row nowrap","align-items":"stretch","min-height":"200px","height":"100%"},
+    "styles" : null,
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "flex"
+  },
+  "version" : "2.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Split default</name>
+        <output_prop_mapping/>
+        <props>[ {
+  "name" : "table",
+  "label" : "Table",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "sysId",
+  "label" : "sysId",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+} ]</props>
+        <required_translations>[ {
+  "message" : "Cancel",
+  "comment" : ""
+}, {
+  "message" : "OK",
+  "comment" : ""
+}, {
+  "message" : "Quantity to Split:",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ {
+  "name" : "displayName",
+  "label" : "displayName",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "maxQuantity",
+  "label" : "maxQuantity",
+  "fieldType" : "number",
+  "valueType" : "number",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "quantity",
+  "label" : "quantity",
+  "fieldType" : "number",
+  "valueType" : "number",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "tempQuantity",
+  "label" : "tempQuantity",
+  "fieldType" : "number",
+  "valueType" : "number",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "errorMessage",
+  "label" : "errorMessage",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "translatedTitle",
+  "label" : "translatedTitle",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+} ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-22 15:38:43</sys_created_on>
+        <sys_id>00d9faeb97c92110c18076021153af03</sys_id>
+        <sys_name>Split default</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_macroponent_00d9faeb97c92110c18076021153af03</sys_update_name>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=00d9faeb97c92110c18076021153af03"/>
+</record_update>
